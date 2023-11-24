@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!--  orientation  -->
+    <!--  Что использовать: dp или sp  -->
+    <!--  Что использовать: invisible или gone  -->
+    <!--  gravity, layout_gravity  -->
     <TextView
+        android:id="@+id/myText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginStart="32dp"
+        android:text="Первый текст!" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/myText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:padding="32dp"
+        android:text="Авторизация" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/edit_background" />
+
+    <Button
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:text="Дальше"
+        android:textSize="12dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp" />
+
+</LinearLayout>
