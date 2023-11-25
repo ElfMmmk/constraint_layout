@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">ViewLesson</string>
     <string name="rest_desc">A chicken sandwich is only as good as its ingredients. That\'s why we import our spices and use top-quality ingredients in each of our Nashville Hot Chicken tenders, as well as our other offerings.We pride ourselves in following the traditional Hot Chicken seasonings and processes used in Nashville, the birthplace of Hot Chicken. From dry spice to the classic hot oil, our Hot Chicken is as Nashvillian as it gets!</string>
+    <string name="rest_title">Bar Reataurant</string>
+    <string name="location_title">Location:</string>
+    <string name="location_description">Moscow, Arbat</string>
+    <string name="dish1">Burgers</string>
+    <string name="dish2">Chicken</string>
+    <string name="dish3">PhoBo</string>
+    <string name="dish4">Rice</string>
+    <string name="dish5">SuperDuperSnack</string>
+    <string name="image_content_description">Image that shows a restaurant</string>
 </resources>

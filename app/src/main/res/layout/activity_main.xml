@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/image_content_description" />
 
     <TextView
         android:id="@+id/title"
@@ -23,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Bar Reataurant"
-        android:textSize="36dp"
+        android:text="@string/rest_title"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toStartOf="@id/infoView"
@@ -32,7 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rest"
         app:layout_goneMarginEnd="16dp" />
-    <!--    tools:text="@tools:sample/lorem/random"-->
 
     <ImageView
         android:id="@+id/infoView"
@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Location:"
+        android:text="@string/location_title"
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
@@ -59,13 +59,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Moscow, Arbat"
+        android:text="@string/location_description"
         android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@id/location"
         app:layout_constraintStart_toEndOf="@id/location" />
-
-    <!--    app:layout_constraintTop_toTopOf="@id/location"-->
-    <!--    app:layout_constraintBottom_toBottomOf="@id/location"-->
 
     <TextView
         android:id="@+id/descriptionRest"
@@ -90,35 +87,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descriptionRest" />
 
-    <!--    -->
-
     <TextView
         android:id="@+id/type1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Burgers"
-        android:textSize="18sp" />
+        style="@style/DishStyle"
+        android:text="@string/dish1" />
 
     <TextView
         android:id="@+id/type2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Chicken"
-        android:textSize="18sp"
+        style="@style/DishStyle"
+        android:text="@string/dish2"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/type3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="PhoBo"
-        android:textSize="20sp"
+        style="@style/DishStyle"
+        android:text="@string/dish3"
         tools:ignore="MissingConstraints" />
 
 
@@ -126,20 +115,16 @@
         android:id="@+id/type4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Rice"
-        android:textSize="20sp"
+        style="@style/DishStyle"
+        android:text="@string/dish4"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/type5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="SuperDuperSnack"
-        android:textSize="20sp"
+        style="@style/DishStyle"
+        android:text="@string/dish5"
         tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.helper.widget.Flow
@@ -159,6 +144,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dishes"
         app:layout_constraintWidth_default="wrap" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
