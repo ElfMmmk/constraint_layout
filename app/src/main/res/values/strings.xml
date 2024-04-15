@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">ViewLesson</string>
+    <string name="header_text">FoodFinder</string>
+    <string name="daily_dish_announcement">Dish of the day: </string>
+    <string name="daily_dish">Lasagna</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="rest_desc">A chicken sandwich is only as good as its ingredients. That\'s why we import our spices and use top-quality ingredients in each of our Nashville Hot Chicken tenders, as well as our other offerings.We pride ourselves in following the traditional Hot Chicken seasonings and processes used in Nashville, the birthplace of Hot Chicken. From dry spice to the classic hot oil, our Hot Chicken is as Nashvillian as it gets!</string>
+    <string name="rest_title">Bar Reataurant</string>
+    <string name="location_title">Location:</string>
+    <string name="location_description">Moscow, Arbat</string>
+    <string name="ingredient1">Meat</string>
+    <string name="ingredient2">Onion and garlic</string>
+    <string name="ingredient3">Tomato products</string>
+    <string name="ingredient4">Sugar</string>
+    <string name="ingredient5">Spices and seasonings</string>
+    <string name="ingredient6">Lasagna noodles</string>
+    <string name="ingredient7">Cheeses</string>
+    <string name="ingredient8">Egg</string>
+    <string name="footer_text">Click the icon now</string>
+    <string name="image_content_description_ingredients">Image that shows an ingredients</string>
+    <string name="image_content_description_icon">Image that shows an icon</string>
+    <string name="image_content_description_lasagna">Image that shows a lasagna</string>
 </resources>

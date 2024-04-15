@@ -4,15 +4,185 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_text"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/daily_dish_announcement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="@string/daily_dish_announcement"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@+id/header_title"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/daily_dish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/daily_dish"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@id/daily_dish_announcement"
+        app:layout_constraintStart_toEndOf="@id/daily_dish_announcement" />
+
+    <ImageView
+        android:id="@+id/daily_dish_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_content_description_lasagna"
+        android:src="@drawable/main_dish"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/daily_dish" />
 
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ingredients"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/daily_dish_image" />
+
+    <TextView
+        android:id="@+id/ingredient1"
+        style="@style/DishStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredient1" />
+
+    <TextView
+        android:id="@+id/ingredient2"
+        style="@style/DishStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredient2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ingredient3"
+        style="@style/DishStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredient3"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/ingredient4"
+        style="@style/DishStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredient4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ingredient5"
+        style="@style/DishStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredient5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ingredient6"
+        style="@style/DishStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredient6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ingredient7"
+        style="@style/DishStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredient7"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ingredient8"
+        style="@style/DishStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredient8"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/ingredient_wrap"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="ingredient1, ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8"
+        app:flow_horizontalAlign="start"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalGap="1dp"
+        app:flow_verticalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredients"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/ingredient_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_content_description_ingredients"
+        android:paddingStart="150dp"
+        android:src="@drawable/lasagna_ingredients"
+        app:layout_constraintBottom_toBottomOf="@id/ingredient_wrap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/ingredient_wrap"
+        app:layout_constraintTop_toTopOf="@id/ingredient_wrap"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/footer_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredient_wrap" />
+
+    <ImageView
+        android:id="@+id/footer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_content_description_icon"
+        android:src="@drawable/baseline_fastfood_24"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/footer_text"
+        app:layout_constraintTop_toTopOf="@id/footer_text"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
